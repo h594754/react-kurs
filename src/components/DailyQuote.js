@@ -6,7 +6,7 @@ export default function DailyQuote() {
   const [quoteData, setQuoteData] = useState(null);
 
   useEffect(() => {
-    fetch("https://api.quotable.io/random") // Eksempel på et sitat-API
+    fetch("https://api.quotable.io/random?tags=technology") // Eksempel på et sitat-API
       .then((response) => response.json())
       .then((data) => {
         setQuoteData(data);
