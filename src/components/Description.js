@@ -22,7 +22,7 @@ const Description = () => {
       />
 
       <Switch value={checked} onChange={(e) => setChecked(e.target.checked)} />
-
+      
       <Button onClick={(e) => setCount(count + 1)}>Klikk meg {count} </Button>
 
       <Typography variant="body1">{descriptionText}</Typography>
