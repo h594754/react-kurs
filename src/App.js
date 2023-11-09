@@ -5,12 +5,14 @@ import { Stack } from "@mui/material";
 import Description from "./components/Description";
 import ImageComponent from "./components/ImageComponent";
 import DailyQuote from "./components/DailyQuote";
+import WeatherWidget from "./components/WeatherWidget";
 
 export default function App() {
   return (
     <Container maxWidth="lg">
       <Header />
       <Stack direction="column" spacing={2} mt={2}>
+        <WeatherWidget />
         <Description />
         <DailyQuote />
         <ImageComponent />
